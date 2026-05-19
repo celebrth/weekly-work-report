@@ -12,15 +12,19 @@ import { PlusCircle, Trash2, Save, Send, AlertCircle } from "lucide-react"
 
 type ReportItem = {
   id?: string
+  report_id?: string
   category: string
   title: string
   description: string
   status: string
   progress: number
   issues: string
+  support_requested?: string
   related_link?: string
   requires_leader_review?: boolean
   review_request_note?: string
+  created_at?: string
+  updated_at?: string
 }
 
 const CATEGORIES = ['Completed This Week', 'Next Week Plan', 'Assigned Tasks']
