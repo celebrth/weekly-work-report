@@ -122,10 +122,10 @@ export default function LoginPage() {
         {/* Softer subtle gradient divider */}
         <div className="absolute right-0 top-[15%] bottom-[15%] w-[1px] bg-gradient-to-b from-transparent via-stone-200/70 to-transparent"></div>
         
-        <div className="w-full max-w-[480px] xl:max-w-[540px] mx-auto flex flex-col z-10 -mt-10">
+        <div className="w-full max-w-[480px] xl:max-w-[520px] mx-auto flex flex-col z-10 -mt-8">
           
           {/* Top Logo Area */}
-          <div className="flex items-center gap-2 text-stone-800 font-bold text-lg mb-6">
+          <div className="flex items-center gap-2 text-stone-800 font-bold text-lg mb-8">
             <div className="bg-white p-1.5 rounded-md border-[1.5px] border-stone-800 shadow-[2px_2px_0px_0px_rgba(28,25,23,1)]">
               <BookOpen className="w-5 h-5 text-amber-500" strokeWidth={2.5} />
             </div>
@@ -133,38 +133,49 @@ export default function LoginPage() {
           </div>
 
           {/* Illustration Area */}
-          <div className="relative w-full mb-8 -ml-2 xl:-ml-4">
+          <div className="relative w-full mb-8">
             <img 
               src="/illustration.png" 
               alt="할일도 풍년이다 일러스트" 
-              className="w-full max-w-[520px] rounded-2xl object-cover"
+              className="w-full rounded-2xl object-cover border border-stone-200/60 shadow-sm"
             />
+          </div>
+
+          {/* Copy Area */}
+          <div className="mb-8">
+            <h1 className="text-3xl xl:text-[2.5rem] font-extrabold text-stone-900 mb-4 tracking-tight break-keep leading-tight">
+              지쳤어도 보고는 해야지
+            </h1>
+            <p className="text-stone-500 text-base xl:text-lg font-medium leading-relaxed break-keep">
+              일은 많아도 리포트는 쉽게,<br />
+              주간 업무를 정리하고, 피드백까지 한 번에.
+            </p>
           </div>
 
           {/* Bottom Feature Icons */}
           <div className="flex items-center gap-3 w-full">
-            <div className="flex-1 bg-white/90 backdrop-blur-sm py-3.5 px-2 rounded-xl border border-stone-300 shadow-[2px_2px_0px_0px_rgba(28,25,23,0.8)] flex flex-col items-center text-center transition-transform hover:-translate-y-1">
-              <div className="text-amber-500 mb-1.5 relative">
+            <div className="flex-1 bg-white/90 backdrop-blur-sm py-4 px-2 rounded-xl border border-stone-300 shadow-[2px_2px_0px_0px_rgba(28,25,23,0.8)] flex flex-col items-center text-center transition-transform hover:-translate-y-1">
+              <div className="text-amber-500 mb-2 relative">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
               </div>
-              <h3 className="font-bold text-stone-900 text-xs">업무 정리</h3>
-              <p className="text-[10px] text-stone-500 font-medium mt-0.5">한눈에 보기</p>
+              <h3 className="font-bold text-stone-900 text-xs sm:text-sm">업무 정리</h3>
+              <p className="text-[10px] sm:text-xs text-stone-500 font-medium mt-0.5">한눈에 보기</p>
             </div>
             
-            <div className="flex-1 bg-white/90 backdrop-blur-sm py-3.5 px-2 rounded-xl border border-stone-300 shadow-[2px_2px_0px_0px_rgba(28,25,23,0.8)] flex flex-col items-center text-center transition-transform hover:-translate-y-1">
-              <div className="text-amber-500 mb-1.5">
+            <div className="flex-1 bg-white/90 backdrop-blur-sm py-4 px-2 rounded-xl border border-stone-300 shadow-[2px_2px_0px_0px_rgba(28,25,23,0.8)] flex flex-col items-center text-center transition-transform hover:-translate-y-1">
+              <div className="text-amber-500 mb-2">
                 <MessageSquare className="w-6 h-6" strokeWidth={2.5} />
               </div>
-              <h3 className="font-bold text-stone-900 text-xs">피드백</h3>
-              <p className="text-[10px] text-stone-500 font-medium mt-0.5">더 빠르게</p>
+              <h3 className="font-bold text-stone-900 text-xs sm:text-sm">피드백</h3>
+              <p className="text-[10px] sm:text-xs text-stone-500 font-medium mt-0.5">더 빠르게</p>
             </div>
             
-            <div className="flex-1 bg-white/90 backdrop-blur-sm py-3.5 px-2 rounded-xl border border-stone-300 shadow-[2px_2px_0px_0px_rgba(28,25,23,0.8)] flex flex-col items-center text-center transition-transform hover:-translate-y-1">
-              <div className="text-amber-500 mb-1.5">
+            <div className="flex-1 bg-white/90 backdrop-blur-sm py-4 px-2 rounded-xl border border-stone-300 shadow-[2px_2px_0px_0px_rgba(28,25,23,0.8)] flex flex-col items-center text-center transition-transform hover:-translate-y-1">
+              <div className="text-amber-500 mb-2">
                 <Sprout className="w-6 h-6" strokeWidth={2.5} />
               </div>
-              <h3 className="font-bold text-stone-900 text-xs">성장 기록</h3>
-              <p className="text-[10px] text-stone-500 font-medium mt-0.5">차곡차곡</p>
+              <h3 className="font-bold text-stone-900 text-xs sm:text-sm">성장 기록</h3>
+              <p className="text-[10px] sm:text-xs text-stone-500 font-medium mt-0.5">차곡차곡</p>
             </div>
           </div>
 
