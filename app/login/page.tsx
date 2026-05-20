@@ -137,7 +137,7 @@ export default function LoginPage() {
             <img 
               src="/illustration.png" 
               alt="할일도 풍년이다 일러스트" 
-              className="w-full h-auto object-contain mix-blend-multiply pointer-events-none"
+              className="w-full max-w-[520px] rounded-2xl object-cover"
             />
           </div>
 
