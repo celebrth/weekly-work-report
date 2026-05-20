@@ -230,14 +230,14 @@ export default function LoginPage() {
               <div className="space-y-2">
                 <Label htmlFor="email" className="text-stone-700 font-bold text-sm">이메일</Label>
                 <div className="relative">
-                  <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400" />
+                  <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400 pointer-events-none" />
                   <Input
                     id="email"
                     type="email"
                     placeholder="이메일을 입력하세요"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="h-12 rounded-xl border-stone-200 bg-stone-50/50 pl-11 px-4 placeholder:text-stone-400 focus-visible:ring-amber-500"
+                    className="h-12 rounded-xl border-stone-200 bg-stone-50/50 pl-11 pr-4 placeholder:text-stone-400 focus-visible:ring-amber-500"
                   />
                 </div>
               </div>
@@ -245,7 +245,7 @@ export default function LoginPage() {
               <div className="space-y-2">
                 <Label htmlFor="password" className="text-stone-700 font-bold text-sm">비밀번호</Label>
                 <div className="relative">
-                  <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400" />
+                  <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400 pointer-events-none" />
                   <Input
                     id="password"
                     type={showPassword ? "text" : "password"}
