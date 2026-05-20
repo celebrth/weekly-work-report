@@ -18,7 +18,7 @@ export default function LoginPage() {
   const [successMessage, setSuccessMessage] = useState<string | null>(null)
   const [showPassword, setShowPassword] = useState(false)
   const router = useRouter()
-  const supabase = createClient()
+  const [supabase] = useState(() => createClient())
 
   const validateForm = () => {
     if (!email.trim()) {

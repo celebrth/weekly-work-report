@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { createClient } from "@/lib/supabase/server"
 import { format, startOfWeek } from "date-fns"
 import { Button } from "@/components/ui/button"
